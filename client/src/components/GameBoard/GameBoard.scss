@@ -1,0 +1,65 @@
+@import "../../style.scss";
+
+.gameBoard{
+   .container{
+        backdrop-filter: brigtness(0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 15%;
+        background-color: $color-bg-light;
+        -webkit-box-shadow: 4px 4px 4px 0px rgba(105,73,73,0.15); 
+        box-shadow: 4px 4px 4px 0px rgba(105,73,73,0.15);
+        border-radius: $radius-md;
+        height: fit-content;
+
+        .gameInfo{
+            color: $color-text-dark;
+            font-weight: 500;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3px;
+            }
+        }
+
+        .gameBoard{
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 3px;
+        }
+
+        .restart{
+            button{
+                padding: 12px 16px;
+                background-color: transparent;
+                border-radius: 1000px;
+                border: 1px solid $color-accent-red;
+                color: $color-accent-red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3px;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            button:hover{
+                background-color: $color-accent-red;
+                color: white;
+                -webkit-box-shadow: 0px 2px 3px 0px rgba(105,73,73,0.47); 
+                box-shadow: 0px 2px 3px 0px rgba(105,73,73,0.47);
+            }
+        }
+        @media (max-width: 960px){
+            padding: 40px 15px;
+        }
+    } 
+}

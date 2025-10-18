@@ -1,0 +1,39 @@
+@import "../../style.scss";
+
+.navigationBar{
+    display: flex;
+    background-color: $color-bg-pink;
+    gap: 10px;
+    padding: 0px 16px;
+    border-radius: $radius-md;
+    justify-content: flex-start;
+    align-items: center;
+
+    span{
+        display: flex;
+        padding: 10px 15px;
+        font-weight: 500;
+        color: $color-text-dark;
+        cursor: pointer;
+    }
+
+    span:hover{
+        background-color: #F3E8E8;
+        border-radius: $radius-md;
+    }
+    
+    .focus{
+            background-color: $color-bg-light;
+            border-radius: $radius-md;
+            -webkit-box-shadow: 1px 1px 7px 1px $color-shadow; 
+            box-shadow: 1px 1px 7px 1px $color-shadow;
+    }
+
+    .focus:hover{
+        background-color: $color-bg-light;
+        border-radius: $radius-md;
+        -webkit-box-shadow: 1px 1px 7px 1px $color-shadow; 
+        box-shadow: 1px 1px 7px 1px $color-shadow;
+    }
+
+}

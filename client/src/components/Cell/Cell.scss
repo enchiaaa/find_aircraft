@@ -1,0 +1,31 @@
+@import "../../style.scss";
+
+.cell{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: none;
+    background-color: $color-bg-pink;
+
+    &_opened{
+        &_body{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border: none;
+            background-color: $color-accent-blue;
+        }
+
+        &_head{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border: none;
+            background-color: $color-accent-red;
+        }
+    
+        &_none{
+            width: 100%;
+            aspect-ratio: 1/1;
+            border: none;
+            background-color: #E5DBDB;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.app{
+
+    display: flex;
+    flex-direction: column;
+    padding: 30px 150px;
+    gap: 30px;
+
+    .content{
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+
+        .left{
+            inline-size: 70%;
+            
+            @media (max-width: 960px){
+                inline-size: 100%;
+            }
+        }
+        .right{
+            inline-size: 30%;
+            @media (max-width: 960px){
+                inline-size: 100%;
+            }
+        }
+        
+        @media (max-width: 960px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 960px){
+        padding: 30px 80px;
+    }
+
+    @media (max-width: 480px){
+        padding: 30px 20px;
+    }
+
+
+}
