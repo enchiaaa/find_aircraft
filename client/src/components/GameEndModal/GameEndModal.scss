@@ -1,0 +1,64 @@
+@import "../../style.scss";
+
+.gameEndModal{
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span{
+            font-weight: 500;
+            font-size: 1.5rem;
+            color: white
+        }
+
+        .buttons{
+            display: flex;
+            gap: 25px;
+
+            button{
+                display: flex;
+                gap: 3px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 999px;
+                padding: 12px 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            #record{
+                background-color: $color-accent-red;
+                color: white;
+
+                &:hover{
+                    background-color: darken($color-accent-red, 10%)
+                }
+            }
+            #alreadyRecord{
+                background-color: lighten(#000000, 80%);
+                color: white;
+
+                &:hover{
+                    background-color: darken(lighten(#000000, 80%), 10%)
+                }
+            }
+
+            #ans{
+                background-color: $color-accent-red;
+                color: white;
+            }     
+            #restart{
+                background-color: $color-bg-light;
+                color: $color-accent-red;
+                border: 1px solid $color-accent-red;
+
+                &:hover{
+                    background-color: darken($color-bg-light, 10%)
+                }
+            }
+
+        }
+    }
+}
